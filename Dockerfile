@@ -28,6 +28,6 @@ RUN set -ex; \
         rm /tmp/docker-$VER.tgz; \
         mv /tmp/docker/* /usr/bin; \
         npm install -g lerna@2.8.0; \
-        cd /opt && curl --insecure -OL https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778-linux.zip && \
+        cd /opt && curl --insecure -OL https://dl.bintray.com/sonarsource/SonarQube/org/sonarsource/scanner/cli/sonar-scanner-cli/3.0.3.778/sonar-scanner-cli-3.0.3.778-linux.zip && \
         unzip sonar-scanner-cli-3.0.3.778-linux.zip && rm sonar-scanner-cli-3.0.3.778-linux.zip && \
         ln -s /opt/sonar-scanner-3.0.3.778-linux/bin/sonar-scanner /usr/bin/
