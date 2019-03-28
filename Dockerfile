@@ -2,7 +2,7 @@ FROM node:11.12
 
 RUN set -ex; \
         \
-        echo "deb http://ftp.debian.org/debian jessie-backports main" > /etc/apt/sources.list.d/debian-backports.list; \
+        echo "deb http://ftp.debian.org/debian stretch-backports main" > /etc/apt/sources.list.d/debian-backports.list; \
         apt-get update; \
         apt-get install -y --no-install-recommends \
         libxslt1-dev \
@@ -19,7 +19,7 @@ RUN set -ex; \
         unzip \
         ssh \
         curl; \
-        apt-get -t jessie-backports -y --no-install-recommends install git; \
+        apt-get -t stretch-backports -y --no-install-recommends install git; \
         rm -rf /var/lib/apt/lists/*; \
         \
         VER="17.03.0-ce"; \
