@@ -18,6 +18,7 @@ RUN set -ex; \
         libssl-dev \
         unzip \
         ssh \
+        jq \
         curl; \
         apt-get -t stretch-backports -y --no-install-recommends install git; \
         rm -rf /var/lib/apt/lists/*; \
