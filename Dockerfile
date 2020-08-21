@@ -1,4 +1,4 @@
-FROM node:11.12
+FROM node:12.18
 
 RUN set -ex; \
         \
